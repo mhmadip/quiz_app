@@ -15,4 +15,4 @@ This project has many important things.
 
 
 
-https://github.com/mhmadip/quiz_app/blob/master/coffee%20quiz%20app.png?raw=true
+https://github.com/mhmadip/quiz_app/blob/master/coffee%20quiz%20app.png
