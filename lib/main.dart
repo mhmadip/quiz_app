@@ -172,74 +172,216 @@ class _MyHomePageState extends State<MyHomePage> {
                 image: NetworkImage(imageUrl),
               ),
             ),
-            child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
+            child:
+                Column(mainAxisAlignment: MainAxisAlignment.start, children: <
+                    Widget>[
+              Text(
+                'Select correct answers from below:',
+                style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+              ),
+              Padding(
+                padding: EdgeInsets.all(8.0),
+              ),
+              Divider(height: 5.0, color: Colors.black),
+              Padding(
+                padding: EdgeInsets.all(8.0),
+              ),
+              Text(
+                'How many years it take for a coffee tree to reach maturity?',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18.0,
+                ),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Radio(
+                    value: 0,
+                    groupValue: _radioValue1,
+                    onChanged: _handleRadioValueChange1,
+                  ),
                   Text(
-                    'Select correct answers from below:',
-                    style:
-                        TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                    '5',
+                    style: TextStyle(fontSize: 16.0),
                   ),
-                  Padding(
-                    padding: EdgeInsets.all(8.0),
-                  ),
-                  Divider(height: 5.0, color: Colors.black),
-                  Padding(
-                    padding: EdgeInsets.all(8.0),
+                  Radio(
+                    value: 1,
+                    groupValue: _radioValue1,
+                    onChanged: _handleRadioValueChange1,
                   ),
                   Text(
-                    'How many years it take for a coffee tree to reach maturity?',
+                    '8',
                     style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18.0,
+                      fontSize: 16.0,
                     ),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Radio(
-                        value: 0,
-                        groupValue: _radioValue1,
-                        onChanged: _handleRadioValueChange1,
+                  Radio(
+                    value: 2,
+                    groupValue: _radioValue1,
+                    onChanged: _handleRadioValueChange1,
+                  ),
+                  Text(
+                    '2',
+                    style: TextStyle(fontSize: 16.0),
+                  ),
+                ],
+              ),
+              Divider(
+                height: 5.0,
+                color: Colors.black,
+              ),
+              Padding(
+                padding: EdgeInsets.all(8.0),
+              ),
+              Text(
+                'What country drinks the most coffee per person?',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18.0,
+                ),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Radio(
+                    value: 0,
+                    groupValue: _radioValue2,
+                    onChanged: _handleRadioValueChange2,
+                  ),
+                  Text(
+                    'Italy',
+                    style: TextStyle(fontSize: 16.0),
+                  ),
+                  Radio(
+                    value: 1,
+                    groupValue: _radioValue2,
+                    onChanged: _handleRadioValueChange2,
+                  ),
+                  Text(
+                    'Germany',
+                    style: TextStyle(fontSize: 16.0),
+                  ),
+                  Radio(
+                    value: 2,
+                    groupValue: _radioValue2,
+                    onChanged: _handleRadioValueChange2,
+                  ),
+                  Text(
+                    'France',
+                    style: TextStyle(fontSize: 16.0),
+                  ),
+                ],
+              ),
+              Divider(
+                height: 5.0,
+                color: Colors.black,
+              ),
+              Padding(
+                padding: EdgeInsets.all(8.0),
+              ),
+              Column(mainAxisAlignment: MainAxisAlignment.center, children: <
+                  Widget>[
+                Text(
+                  ' How many cups of coffee do United States residents drink on average each day?',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18.0,
+                  ),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Radio(
+                      value: 0,
+                      groupValue: _radioValue3,
+                      onChanged: _handleRadioValueChange3,
+                    ),
+                    Text(
+                      '1.4',
+                      style: TextStyle(fontSize: 16.0),
+                    ),
+                    Radio(
+                      value: 1,
+                      groupValue: _radioValue3,
+                      onChanged: _handleRadioValueChange3,
+                    ),
+                    Text(
+                      '3.1',
+                      style: TextStyle(fontSize: 16.0),
+                    ),
+                    Radio(
+                      value: 2,
+                      groupValue: _radioValue3,
+                      onChanged: _handleRadioValueChange3,
+                    ),
+                    Text(
+                      '3.5',
+                      style: TextStyle(fontSize: 16.0),
+                    ),
+                  ],
+                ),
+                Divider(
+                  height: 5.0,
+                  color: Colors.black,
+                ),
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      ' How many coffee trees are growing in Brazil?',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18.0,
                       ),
-                      Text(
-                        '5',
-                        style: TextStyle(fontSize: 16.0),
-                      ),
-                      Radio(
-                        value: 1,
-                        groupValue: _radioValue1,
-                        onChanged: _handleRadioValueChange1,
-                      ),
-                      Text(
-                        '8',
-                        style: TextStyle(
-                          fontSize: 16.0,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Radio(
+                          value: 0,
+                          groupValue: _radioValue4,
+                          onChanged: _handleRadioValueChange4,
                         ),
-                      ),
-                      Radio(
-                        value: 2,
-                        groupValue: _radioValue1,
-                        onChanged: _handleRadioValueChange1,
-                      ),
-                      Text(
-                        '2',
-                        style: TextStyle(fontSize: 16.0),
-                      ),
-                    ],
-                  ),
-                  Divider(
-                    height: 5.0,
-                    color: Colors.black,
-                  ),
-                  Padding(
-                    padding: EdgeInsets.all(8.0),
-                  ),
-                  Column(
+                        Text(
+                          '4 billion',
+                          style: TextStyle(fontSize: 16.0),
+                        ),
+                        Radio(
+                          value: 1,
+                          groupValue: _radioValue4,
+                          onChanged: _handleRadioValueChange4,
+                        ),
+                        Text(
+                          '3 billion',
+                          style: TextStyle(fontSize: 16.0),
+                        ),
+                        Radio(
+                          value: 2,
+                          groupValue: _radioValue4,
+                          onChanged: _handleRadioValueChange4,
+                        ),
+                        Text(
+                          '2 billion',
+                          style: TextStyle(fontSize: 16.0),
+                        ),
+                      ],
+                    ),
+                    Divider(
+                      height: 5.0,
+                      color: Colors.black,
+                    ),
+                    Padding(
+                      padding: EdgeInsets.all(8.0),
+                    ),
+                    Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Text(
-                          'What country drinks the most coffee per person?',
+                          'What is considered a lethal dose of caffeine?',
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 18.0,
@@ -250,29 +392,29 @@ class _MyHomePageState extends State<MyHomePage> {
                           children: <Widget>[
                             Radio(
                               value: 0,
-                              groupValue: _radioValue2,
-                              onChanged: _handleRadioValueChange2,
+                              groupValue: _radioValue5,
+                              onChanged: _handleRadioValueChange5,
                             ),
                             Text(
-                              'Italy',
+                              '5 grams',
                               style: TextStyle(fontSize: 16.0),
                             ),
                             Radio(
                               value: 1,
-                              groupValue: _radioValue2,
-                              onChanged: _handleRadioValueChange2,
+                              groupValue: _radioValue5,
+                              onChanged: _handleRadioValueChange5,
                             ),
                             Text(
-                              'Germany',
+                              '20 grams',
                               style: TextStyle(fontSize: 16.0),
                             ),
                             Radio(
                               value: 2,
-                              groupValue: _radioValue2,
-                              onChanged: _handleRadioValueChange2,
+                              groupValue: _radioValue5,
+                              onChanged: _handleRadioValueChange5,
                             ),
                             Text(
-                              'France',
+                              '10 grams',
                               style: TextStyle(fontSize: 16.0),
                             ),
                           ],
@@ -284,202 +426,47 @@ class _MyHomePageState extends State<MyHomePage> {
                         Padding(
                           padding: EdgeInsets.all(8.0),
                         ),
-                        Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: <Widget>[
-                              Text(
-                                ' How many cups of coffee do United States residents drink on average each day?',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 18.0,
-                                ),
-                              ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: <Widget>[
-                                  Radio(
-                                    value: 0,
-                                    groupValue: _radioValue3,
-                                    onChanged: _handleRadioValueChange3,
-                                  ),
-                                  Text(
-                                    '1.4',
-                                    style: TextStyle(fontSize: 16.0),
-                                  ),
-                                  Radio(
-                                    value: 1,
-                                    groupValue: _radioValue3,
-                                    onChanged: _handleRadioValueChange3,
-                                  ),
-                                  Text(
-                                    '3.1',
-                                    style: TextStyle(fontSize: 16.0),
-                                  ),
-                                  Radio(
-                                    value: 2,
-                                    groupValue: _radioValue3,
-                                    onChanged: _handleRadioValueChange3,
-                                  ),
-                                  Text(
-                                    '3.5',
-                                    style: TextStyle(fontSize: 16.0),
-                                  ),
-                                ],
-                              ),
-                              Divider(
-                                height: 5.0,
-                                color: Colors.black,
-                              ),
-                              Padding(
-                                padding: EdgeInsets.all(8.0),
-                              ),
-                              Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: <Widget>[
-                                  Text(
-                                    ' How many coffee trees are growing in Brazil?',
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 18.0,
-                                    ),
-                                  ),
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: <Widget>[
-                                      Radio(
-                                        value: 0,
-                                        groupValue: _radioValue4,
-                                        onChanged: _handleRadioValueChange4,
-                                      ),
-                                      Text(
-                                        '4 billion',
-                                        style: TextStyle(fontSize: 16.0),
-                                      ),
-                                      Radio(
-                                        value: 1,
-                                        groupValue: _radioValue4,
-                                        onChanged: _handleRadioValueChange4,
-                                      ),
-                                      Text(
-                                        '3 billion',
-                                        style: TextStyle(fontSize: 16.0),
-                                      ),
-                                      Radio(
-                                        value: 2,
-                                        groupValue: _radioValue4,
-                                        onChanged: _handleRadioValueChange4,
-                                      ),
-                                      Text(
-                                        '2 billion',
-                                        style: TextStyle(fontSize: 16.0),
-                                      ),
-                                    ],
-                                  ),
-                                  Divider(
-                                    height: 5.0,
-                                    color: Colors.black,
-                                  ),
-                                  Padding(
-                                    padding: EdgeInsets.all(8.0),
-                                  ),
-                                  Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: <Widget>[
-                                      Text(
-                                        'What is considered a lethal dose of caffeine?',
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 18.0,
-                                        ),
-                                      ),
-                                      Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: <Widget>[
-                                          Radio(
-                                            value: 0,
-                                            groupValue: _radioValue5,
-                                            onChanged: _handleRadioValueChange5,
-                                          ),
-                                          Text(
-                                            '5 grams',
-                                            style: TextStyle(fontSize: 16.0),
-                                          ),
-                                          Radio(
-                                            value: 1,
-                                            groupValue: _radioValue5,
-                                            onChanged: _handleRadioValueChange5,
-                                          ),
-                                          Text(
-                                            '20 grams',
-                                            style: TextStyle(fontSize: 16.0),
-                                          ),
-                                          Radio(
-                                            value: 2,
-                                            groupValue: _radioValue5,
-                                            onChanged: _handleRadioValueChange5,
-                                          ),
-                                          Text(
-                                            '10 grams',
-                                            style: TextStyle(fontSize: 16.0),
-                                          ),
-                                        ],
-                                      ),
-                                      Divider(
-                                        height: 5.0,
-                                        color: Colors.black,
-                                      ),
-                                      Padding(
-                                        padding: EdgeInsets.all(8.0),
-                                      ),
-                                      ElevatedButton(
-                                          onPressed: validateAnswers,
-                                          child: Text(
-                                            'Check Final Score',
-                                            style: TextStyle(
-                                                fontSize: 16.0,
-                                                fontWeight: FontWeight.normal,
-                                                color: Colors.white),
-                                          ),
-                                          style: ButtonStyle(
-                                              shape: MaterialStateProperty.all<
-                                                      RoundedRectangleBorder>(
-                                                  RoundedRectangleBorder(
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              18.0),
-                                                      side: BorderSide(
-                                                          color:
-                                                              Colors.red))))),
-                                      Padding(
-                                        padding: EdgeInsets.all(4.0),
-                                      ),
-                                      ElevatedButton(
-                                        onPressed: resetSelection,
-                                        child: Text(
-                                          'Reset Selection',
-                                          style: TextStyle(
-                                              fontWeight: FontWeight.normal,
-                                              fontSize: 16.0,
-                                              color: Colors.white),
-                                        ),
-                                        style: ButtonStyle(
-                                            shape: MaterialStateProperty.all<
-                                                    RoundedRectangleBorder>(
-                                                RoundedRectangleBorder(
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            18.0),
-                                                    side: BorderSide(
-                                                        color: Colors.red)))),
-                                      )
-                                    ],
-                                  ),
-                                ],
-                              )
-                            ])
-                      ])
-                ])));
+                        ElevatedButton(
+                            onPressed: validateAnswers,
+                            child: Text(
+                              'Check Final Score',
+                              style: TextStyle(
+                                  fontSize: 16.0,
+                                  fontWeight: FontWeight.normal,
+                                  color: Colors.white),
+                            ),
+                            style: ButtonStyle(
+                                shape: MaterialStateProperty.all<
+                                        RoundedRectangleBorder>(
+                                    RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(18.0),
+                                        side: BorderSide(color: Colors.red))))),
+                        Padding(
+                          padding: EdgeInsets.all(4.0),
+                        ),
+                        ElevatedButton(
+                          onPressed: resetSelection,
+                          child: Text(
+                            'Reset Selection',
+                            style: TextStyle(
+                                fontWeight: FontWeight.normal,
+                                fontSize: 16.0,
+                                color: Colors.white),
+                          ),
+                          style: ButtonStyle(
+                              shape: MaterialStateProperty.all<
+                                      RoundedRectangleBorder>(
+                                  RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(18.0),
+                                      side: BorderSide(color: Colors.red)))),
+                        )
+                      ],
+                    ),
+                  ],
+                )
+              ])
+            ])));
   }
 
   void resetSelection() {
