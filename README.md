@@ -13,6 +13,6 @@ This project has many important things.
 - Background Network Image using Container widget with BoxDecoration
 - Divider widget between the questions with Padding widgets for spacing
 
+![ScreenShot](https://github.com/mhmadip/quiz_app/blob/master/coffee%20quiz%20app.png?raw=true)
 
 
-https://github.com/mhmadip/quiz_app/blob/master/coffee%20quiz%20app.png
